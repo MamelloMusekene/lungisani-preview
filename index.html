@@ -1,0 +1,1417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Home | Lungisani Primary School</title>
+
+    <meta
+        name="description"
+        content="Lungisani Primary School — quality education, learner growth and community partnership."
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+
+    <!-- =====================================================
+         PLAYFUL COMMUNITY PANEL
+         This section uses CSS only.
+         NO IMAGE IS USED.
+    ====================================================== -->
+
+    <style>
+
+        .community-panel {
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* Main playful area */
+
+        .community-playful {
+            position: relative;
+            min-height: 420px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7fbff 0%,
+                    #e8f4ff 52%,
+                    #fff4ef 100%
+                );
+            border-radius: 24px;
+        }
+
+
+        /* Decorative large circles */
+
+        .community-playful .shape {
+            position: absolute;
+            display: block;
+            pointer-events: none;
+        }
+
+
+        .community-shape-one {
+            width: 180px;
+            height: 180px;
+            top: -70px;
+            left: -55px;
+            border-radius: 50%;
+            background: #c62828;
+            opacity: 0.92;
+        }
+
+
+        .community-shape-two {
+            width: 130px;
+            height: 130px;
+            right: -35px;
+            top: 25px;
+            border-radius: 50%;
+            background: #f0b44c;
+        }
+
+
+        .community-shape-three {
+            width: 95px;
+            height: 95px;
+            left: 35px;
+            bottom: -35px;
+            border-radius: 50%;
+            background: #102a43;
+        }
+
+
+        .community-shape-four {
+            width: 70px;
+            height: 70px;
+            right: 80px;
+            bottom: -25px;
+            border-radius: 50%;
+            background: #c62828;
+            opacity: 0.85;
+        }
+
+
+        /* Dotted decoration */
+
+        .community-dots {
+            position: absolute;
+            width: 90px;
+            height: 70px;
+            right: 35px;
+            bottom: 45px;
+            opacity: 0.55;
+
+            background-image: radial-gradient(
+                #102a43 2px,
+                transparent 2px
+            );
+
+            background-size: 16px 16px;
+        }
+
+
+        /* Star decorations */
+
+        .community-star {
+            position: absolute;
+            color: #c62828;
+            font-size: 42px;
+            line-height: 1;
+            z-index: 2;
+        }
+
+
+        .community-star-one {
+            top: 65px;
+            left: 75px;
+            transform: rotate(-15deg);
+        }
+
+
+        .community-star-two {
+            right: 120px;
+            bottom: 85px;
+            color: #102a43;
+            font-size: 32px;
+            transform: rotate(18deg);
+        }
+
+
+        /* Main content */
+
+        .community-playful-content {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            max-width: 560px;
+            text-align: center;
+        }
+
+
+        .community-playful-label {
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: #102a43;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+        }
+
+
+        .community-playful-title {
+            margin: 0 auto 18px;
+            color: #102a43;
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(
+                2.5rem,
+                5vw,
+                4.3rem
+            );
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+
+        .community-playful-title span {
+            color: #c62828;
+            position: relative;
+            display: inline-block;
+        }
+
+
+        /* Yellow underline */
+
+        .community-playful-title span::after {
+            content: "";
+            position: absolute;
+            left: 4%;
+            right: 4%;
+            bottom: -7px;
+            height: 6px;
+            border-radius: 99px;
+            background: #f0b44c;
+            transform: rotate(-2deg);
+        }
+
+
+        .community-playful-description {
+            max-width: 450px;
+            margin: 0 auto;
+            color: #40566b;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+
+        /* Mini playful cards */
+
+        .community-mini-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+
+        .community-mini-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border-radius: 14px;
+            background: #fff;
+            color: #102a43;
+            box-shadow:
+                0 8px 22px rgba(16, 42, 67, 0.10);
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+
+        .community-mini-card:nth-child(1) {
+            transform: rotate(-3deg);
+        }
+
+
+        .community-mini-card:nth-child(2) {
+            transform: rotate(2deg);
+        }
+
+
+        .community-mini-card:nth-child(3) {
+            transform: rotate(-2deg);
+        }
+
+
+        .community-mini-icon {
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f0b44c;
+            color: #102a43;
+            font-size: 0.75rem;
+            font-weight: 900;
+        }
+
+
+        .community-mini-card:nth-child(2)
+        .community-mini-icon {
+            background: #c62828;
+            color: #fff;
+        }
+
+
+        .community-mini-card:nth-child(3)
+        .community-mini-icon {
+            background: #102a43;
+            color: #fff;
+        }
+
+
+        /* Little floating lines */
+
+        .community-line {
+            position: absolute;
+            height: 4px;
+            border-radius: 99px;
+            z-index: 2;
+        }
+
+
+        .community-line-one {
+            width: 65px;
+            top: 120px;
+            right: 75px;
+            background: #c62828;
+            transform: rotate(25deg);
+        }
+
+
+        .community-line-two {
+            width: 45px;
+            top: 145px;
+            right: 60px;
+            background: #f0b44c;
+            transform: rotate(25deg);
+        }
+
+
+        .community-line-three {
+            width: 55px;
+            bottom: 100px;
+            left: 90px;
+            background: #102a43;
+            transform: rotate(-25deg);
+        }
+
+
+        /* Responsive */
+
+        @media (max-width: 900px) {
+
+            .community-playful {
+                min-height: 390px;
+                padding: 40px 28px;
+            }
+
+        }
+
+
+        @media (max-width: 560px) {
+
+            .community-playful {
+                min-height: 430px;
+                padding: 35px 20px;
+                border-radius: 20px;
+            }
+
+
+            .community-playful-title {
+                font-size: 2.7rem;
+            }
+
+
+            .community-playful-description {
+                font-size: 0.94rem;
+            }
+
+
+            .community-shape-one {
+                width: 120px;
+                height: 120px;
+                left: -55px;
+                top: -45px;
+            }
+
+
+            .community-shape-two {
+                width: 90px;
+                height: 90px;
+                right: -35px;
+            }
+
+
+            .community-star-one {
+                left: 35px;
+                top: 70px;
+                font-size: 30px;
+            }
+
+
+            .community-star-two {
+                right: 35px;
+                bottom: 85px;
+                font-size: 25px;
+            }
+
+
+            .community-mini-cards {
+                gap: 8px;
+            }
+
+
+            .community-mini-card {
+                padding: 8px 11px;
+                font-size: 0.7rem;
+            }
+
+
+            .community-line-one {
+                right: 25px;
+            }
+
+
+            .community-line-two {
+                right: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SKIP LINK
+    ========================== -->
+
+    <a
+        class="skip-link"
+        href="#main-content"
+    >
+        Skip to content
+    </a>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-wrap">
+
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Lungisani Primary School home"
+            >
+
+                <img
+                    src="assets/images/school-logo.png"
+                    alt="Lungisani Primary School logo"
+                >
+
+                <span class="brand-text">
+
+                    <strong>
+                        LUNGISANI
+                    </strong>
+
+                    <small>
+                        PRIMARY SCHOOL
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <nav
+                id="main-navigation"
+                class="main-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    class="active"
+                    href="index.html"
+                >
+                    Home
+                </a>
+
+                <a href="about/index.html">
+                    About
+                </a>
+
+                <a href="academics/index.html">
+                    Academics
+                </a>
+
+                <a href="school-life/index.html">
+                    School Life
+                </a>
+
+                <a href="events/index.html">
+                    Events
+                </a>
+
+                <a href="leadership/index.html">
+                    Leadership
+                </a>
+
+                <a href="gallery/index.html">
+                    Gallery
+                </a>
+
+                <a href="contact/index.html">
+                    Contact
+                </a>
+
+                <a
+                    class="app-link"
+                    href="mzali-app/index.html"
+                >
+                    Mzali App
+                </a>
+
+                <a
+                    class="admissions-link"
+                    href="admissions/index.html"
+                >
+                    Admissions →
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main id="main-content">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="container hero-inner">
+
+                <div class="hero-copy reveal">
+
+                    <div class="eyebrow">
+                        Lungisani Primary School
+                    </div>
+
+
+                    <h1>
+                        Building Bright
+                        <span>Futures Together.</span>
+                    </h1>
+
+
+                    <p>
+                        A professional, welcoming primary school
+                        community committed to quality education,
+                        learner growth and strong partnerships
+                        with families.
+                    </p>
+
+
+                    <div class="actions">
+
+                        <a
+                            class="btn btn-red"
+                            href="about/index.html"
+                        >
+                            Explore Our School →
+                        </a>
+
+
+                        <a
+                            class="btn btn-outline"
+                            href="admissions/index.html"
+                        >
+                            Admissions →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MZALI APP
+        ========================== -->
+
+        <section class="app-banner">
+
+            <div class="container app-box reveal">
+
+
+                <div class="app-copy">
+
+                    <img
+                        src="assets/images/mzali-logo.svg"
+                        alt="Mzali app logo"
+                    >
+
+
+                    <div>
+
+                        <div class="section-kicker">
+                            Mzali App
+                        </div>
+
+
+                        <h3>
+                            Stay connected with your child's progress.
+                        </h3>
+
+
+                        <p>
+                            Keep school information, progress and
+                            parent updates close at hand.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store-buttons">
+
+                    <a
+                        class="store"
+                        href="https://apps.apple.com/za/app/mzali/id1197360837"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <small>
+                            Download on the
+                        </small>
+
+                        <strong>
+                            App Store
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        class="store"
+                        href="https://play.google.com/store/apps/details?id=com.mzali"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <small>
+                            Get it on
+                        </small>
+
+                        <strong>
+                            Google Play
+                        </strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPLORE LUNGISANI
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-head reveal">
+
+                    <div>
+
+                        <div class="section-kicker">
+                            Explore Lungisani
+                        </div>
+
+
+                        <h2>
+                            Everything important,
+                            <br>
+                            one click away.
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Simple navigation for families, learners
+                        and the wider school community.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <a
+                        class="card reveal"
+                        href="about/index.html"
+                    >
+
+                        <div class="feature-icon red">
+                            01
+                        </div>
+
+                        <h3>
+                            Who We Are
+                        </h3>
+
+                        <p>
+                            Our vision, mission, values and the people
+                            who make up our school community.
+                        </p>
+
+                        <span class="arrow">
+                            Learn More →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="card reveal"
+                        href="academics/index.html"
+                    >
+
+                        <div class="feature-icon blue">
+                            02
+                        </div>
+
+                        <h3>
+                            Academics
+                        </h3>
+
+                        <p>
+                            A clear learning journey across Grades R–7
+                            with strong foundations and learner support.
+                        </p>
+
+                        <span class="arrow">
+                            Explore Academics →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="card reveal"
+                        href="school-life/index.html"
+                    >
+
+                        <div class="feature-icon navy">
+                            03
+                        </div>
+
+                        <h3>
+                            School Life
+                        </h3>
+
+                        <p>
+                            Sport, culture, activities and leadership
+                            that help learners grow beyond the classroom.
+                        </p>
+
+                        <span class="arrow">
+                            Explore School Life →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="card reveal"
+                        href="events/index.html"
+                    >
+
+                        <div class="feature-icon red">
+                            04
+                        </div>
+
+                        <h3>
+                            Events
+                        </h3>
+
+                        <p>
+                            Important dates, activities and school
+                            moments in one easy-to-browse calendar.
+                        </p>
+
+                        <span class="arrow">
+                            View Events →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCHOOL AT A GLANCE
+        ========================== -->
+
+        <section class="section glance">
+
+            <div class="container">
+
+
+                <div class="section-head reveal">
+
+                    <div>
+
+                        <div class="section-kicker">
+                            School at a glance
+                        </div>
+
+
+                        <h2>
+                            Simple. Focused.
+                            Learner-centred.
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Four ideas that sit at the heart of
+                        the Lungisani journey.
+                    </p>
+
+                </div>
+
+
+                <div class="glance-grid">
+
+
+                    <div class="glance-card">
+
+                        <div class="glance-icon">
+                            R–7
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Grades R–7
+                            </strong>
+
+                            <span>
+                                Learning journey
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glance-card">
+
+                        <div class="glance-icon">
+                            ★
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Quality Education
+                            </strong>
+
+                            <span>
+                                Our commitment
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glance-card">
+
+                        <div class="glance-icon">
+                            ↗
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Transformation
+                            </strong>
+
+                            <span>
+                                Our mission
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glance-card">
+
+                        <div class="glance-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Responsible Adults
+                            </strong>
+
+                            <span>
+                                Our vision
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUPPORTIVE COMMUNITY
+             
+             IMPORTANT:
+             THERE IS NO PHOTO HERE.
+             THIS IS THE PLAYFUL HTML/CSS DESIGN.
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="community-panel">
+
+
+                    <!-- PLAYFUL LEFT CARD -->
+
+                    <div class="community-playful">
+
+
+                        <!-- Decorative shapes -->
+
+                        <span
+                            class="shape community-shape-one"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <span
+                            class="shape community-shape-two"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <span
+                            class="shape community-shape-three"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <span
+                            class="shape community-shape-four"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <!-- Dots -->
+
+                        <span
+                            class="community-dots"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <!-- Stars -->
+
+                        <span
+                            class="community-star community-star-one"
+                            aria-hidden="true"
+                        >
+                            ★
+                        </span>
+
+
+                        <span
+                            class="community-star community-star-two"
+                            aria-hidden="true"
+                        >
+                            ✦
+                        </span>
+
+
+                        <!-- Decorative lines -->
+
+                        <span
+                            class="community-line community-line-one"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <span
+                            class="community-line community-line-two"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <span
+                            class="community-line community-line-three"
+                            aria-hidden="true"
+                        ></span>
+
+
+                        <!-- Main message -->
+
+                        <div class="community-playful-content">
+
+
+                            <div class="community-playful-label">
+                                LEARN • GROW • BELONG
+                            </div>
+
+
+                            <h2 class="community-playful-title">
+                                Every learner
+                                <span>matters.</span>
+                            </h2>
+
+
+                            <p class="community-playful-description">
+                                A welcoming school community where
+                                children are supported, encouraged
+                                and given room to grow.
+                            </p>
+
+
+                            <!-- Playful mini cards -->
+
+                            <div class="community-mini-cards">
+
+
+                                <div class="community-mini-card">
+
+                                    <span class="community-mini-icon">
+                                        +
+                                    </span>
+
+                                    Learn
+
+                                </div>
+
+
+                                <div class="community-mini-card">
+
+                                    <span class="community-mini-icon">
+                                        ★
+                                    </span>
+
+                                    Grow
+
+                                </div>
+
+
+                                <div class="community-mini-card">
+
+                                    <span class="community-mini-icon">
+                                        ✓
+                                    </span>
+
+                                    Belong
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="community-copy">
+
+                        <div class="section-kicker">
+                            A supportive community
+                        </div>
+
+
+                        <h2>
+                            For lifelong learners.
+                        </h2>
+
+
+                        <p>
+                            We want every learner to feel supported,
+                            challenged and encouraged to grow — in
+                            the classroom and beyond it.
+                        </p>
+
+
+                        <a
+                            class="btn btn-red"
+                            href="about/index.html"
+                        >
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div
+                    class="cta"
+                    style="
+                        background:var(--navy);
+                        color:#fff;
+                        border-radius:24px;
+                        padding:44px;
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        gap:25px;
+                    "
+                >
+
+
+                    <div>
+
+                        <div
+                            class="section-kicker"
+                            style="color:#f07a7a"
+                        >
+                            Lungisani Primary School
+                        </div>
+
+
+                        <h2>
+                            Learn. Play. Grow.
+                        </h2>
+
+
+                        <p style="color:#dbe5ee">
+                            Explore admissions, school life
+                            and the Mzali parent app.
+                        </p>
+
+                    </div>
+
+
+                    <div class="actions">
+
+                        <a
+                            class="btn btn-red"
+                            href="admissions/index.html"
+                        >
+                            Admissions →
+                        </a>
+
+
+                        <a
+                            class="btn btn-white"
+                            href="mzali-app/index.html"
+                        >
+                            Mzali App →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="container footer-grid">
+
+
+            <!-- School -->
+
+            <div class="footer-brand">
+
+                <img
+                    src="assets/images/school-logo.png"
+                    alt="Lungisani Primary School logo"
+                >
+
+
+                <div>
+
+                    <strong>
+                        LUNGISANI
+                    </strong>
+
+                    <span>
+                        PRIMARY SCHOOL
+                    </span>
+
+                </div>
+
+
+                <p>
+                    We shall conquer. A welcoming primary school
+                    community focused on quality education,
+                    learner growth and partnership.
+                </p>
+
+            </div>
+
+
+            <!-- Explore -->
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="about/index.html">
+                    About
+                </a>
+
+                <a href="academics/index.html">
+                    Academics
+                </a>
+
+                <a href="school-life/index.html">
+                    School Life
+                </a>
+
+                <a href="events/index.html">
+                    Events
+                </a>
+
+                <a href="gallery/index.html">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <!-- Connect -->
+
+            <div>
+
+                <h4>
+                    Connect
+                </h4>
+
+                <a href="admissions/index.html">
+                    Admissions
+                </a>
+
+                <a href="contact/index.html">
+                    Contact
+                </a>
+
+                <a href="mzali-app/index.html">
+                    Mzali App
+                </a>
+
+                <a href="leadership/index.html">
+                    Leadership
+                </a>
+
+            </div>
+
+
+            <!-- School information -->
+
+            <div>
+
+                <h4>
+                    School
+                </h4>
+
+
+                <p>
+                    1872 Phenduka Street,
+                    Dikole Ext 1,
+                    Katlehong, 1431
+                </p>
+
+
+                <p>
+                    010 335 0771
+                </p>
+
+
+                <p>
+
+                    <a
+                        href="mailto:ES-LungisaniP/S@gdeschools.gov.za"
+                    >
+                        ES-LungisaniP/S@gdeschools.gov.za
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer bottom -->
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 Lungisani Primary School.
+                All rights reserved.
+            </span>
+
+
+            <span class="footer-credit">
+
+                Website designed &amp; developed by
+
+                <a
+                    href="https://mamello-portfolio.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Mamello Musekene
+                </a>
+
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to top -->
+
+    <button
+        class="back-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

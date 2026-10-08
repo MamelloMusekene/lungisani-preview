@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Events & School Calendar | Lungisani Primary School</title>
+
+    <meta
+        name="description"
+        content="Lungisani Primary School events, important dates and the official school calendar."
+    >
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+
+        <a class="brand" href="../index.html" aria-label="Lungisani Primary School home">
+            <img
+                src="../assets/images/school-logo.png"
+                alt="Lungisani Primary School logo"
+            >
+
+            <span class="brand-text">
+                <strong>LUNGISANI</strong>
+                <small>PRIMARY SCHOOL</small>
+            </span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav
+            id="main-navigation"
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+            <a href="../index.html">Home</a>
+            <a href="../about/index.html">About</a>
+            <a href="../academics/index.html">Academics</a>
+            <a href="../school-life/index.html">School Life</a>
+            <a class="active" href="../events/index.html">Events</a>
+            <a href="../leadership/index.html">Leadership</a>
+            <a href="../gallery/index.html">Gallery</a>
+            <a href="../contact/index.html">Contact</a>
+            <a class="app-link" href="../mzali-app/index.html">Mzali App</a>
+            <a class="admissions-link" href="../admissions/index.html">Admissions →</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+
+            <div class="eyebrow">Events & Calendar</div>
+
+            <h1>
+                Stay informed. Plan ahead.
+            </h1>
+
+            <p>
+                Keep up with important school dates, term dates,
+                holidays and Lungisani Primary School events.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- IMPORTANT DATES -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+                    <div class="section-kicker">
+                        Important dates
+                    </div>
+
+                    <h2>
+                        Know what's coming up.
+                    </h2>
+                </div>
+
+                <p>
+                    Important dates are displayed here to help learners,
+                    parents and the school community plan ahead.
+                </p>
+
+            </div>
+
+
+            <div class="phase-grid">
+
+                <article class="phase-card">
+                    <div class="feature-icon red">26</div>
+
+                    <span>2026</span>
+
+                    <h3>
+                        School year closing
+                    </h3>
+
+                    <strong>
+                        11 December 2026
+                    </strong>
+
+                    <p>
+                        The 2026 public-school year comes to an end.
+                    </p>
+                </article>
+
+
+                <article class="phase-card">
+                    <div class="feature-icon blue">13</div>
+
+                    <span>2027</span>
+
+                    <h3>
+                        School opens
+                    </h3>
+
+                    <strong>
+                        13 January 2027
+                    </strong>
+
+                    <p>
+                        Learners return for the first term of the
+                        2027 school year.
+                    </p>
+                </article>
+
+
+                <article class="phase-card">
+                    <div class="feature-icon navy">4</div>
+
+                    <span>TERMS</span>
+
+                    <h3>
+                        2027 school year
+                    </h3>
+
+                    <strong>
+                        Four terms
+                    </strong>
+
+                    <p>
+                        View the complete official school calendar
+                        below.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SCHOOL EVENTS -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+                    <div class="section-kicker">
+                        School events
+                    </div>
+
+                    <h2 id="upcomingEventsTitle">
+                        Upcoming
+                    </h2>
+                </div>
+
+                <p id="upcomingEventsIntro">
+                    Confirmed school events for this month.
+                </p>
+
+            </div>
+
+
+            <div
+                class="event-list"
+                id="upcomingEvents"
+                aria-live="polite"
+            >
+                <!-- Filled automatically by events.js -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTERACTIVE CALENDAR -->
+    <section class="section calendar-section">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <div class="section-kicker">
+                        Interactive calendar
+                    </div>
+
+                    <h2>
+                        School calendar.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Select a date to see what is happening
+                    on that day.
+                </p>
+
+            </div>
+
+
+            <!-- THIS IS THE SECOND CODE'S CALENDAR STYLE ONLY -->
+
+            <div class="school-calendar-card">
+
+                <div class="calendar-toolbar">
+
+                    <button
+                        class="calendar-nav"
+                        id="prevMonth"
+                        type="button"
+                        aria-label="Previous month"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div class="calendar-title-wrap">
+
+                        <h2 id="calendarTitle">
+                            October
+                        </h2>
+
+                        <span id="calendarYear">
+                            2026
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="calendar-nav"
+                        id="nextMonth"
+                        type="button"
+                        aria-label="Next month"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="calendar-current-month"
+                    id="currentMonthMessage"
+                >
+                    Today
+                </div>
+
+
+                <div class="calendar-legend">
+
+                    <span>
+                        <i class="legend-dot today-dot"></i>
+                        Today
+                    </span>
+
+                    <span>
+                        <i class="legend-dot event-dot"></i>
+                        School event
+                    </span>
+
+                    <span>
+                        <i class="legend-dot term-dot"></i>
+                        Term date
+                    </span>
+
+                    <span>
+                        <i class="legend-dot holiday-dot"></i>
+                        No school
+                    </span>
+
+                </div>
+
+
+                <div class="calendar-weekdays">
+
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+
+                </div>
+
+
+                <div
+                    class="calendar-grid"
+                    id="calendarGrid"
+                    aria-label="Interactive school calendar"
+                >
+                </div>
+
+
+                <div
+                    class="calendar-detail"
+                    id="calendarDetail"
+                    aria-live="polite"
+                >
+
+                    <div class="calendar-detail-empty">
+
+                        <strong>
+                            Select a date
+                        </strong>
+
+                        <span>
+                            Choose a date to see its school information.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 2027 TERMS -->
+    <section class="section glance">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <div class="section-kicker">
+                        2027 school year
+                    </div>
+
+                    <h2>
+                        Term dates.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Official 2027 public-school term dates.
+                </p>
+
+            </div>
+
+
+            <div class="support-grid">
+
+                <article class="support-card">
+
+                    <div class="feature-icon red">
+                        1
+                    </div>
+
+                    <h3>
+                        Term 1
+                    </h3>
+
+                    <strong>
+                        13 January – 19 March
+                    </strong>
+
+                    <p>
+                        The first term of the 2027 school year.
+                    </p>
+
+                </article>
+
+
+                <article class="support-card">
+
+                    <div class="feature-icon blue">
+                        2
+                    </div>
+
+                    <h3>
+                        Term 2
+                    </h3>
+
+                    <strong>
+                        6 April – 25 June
+                    </strong>
+
+                    <p>
+                        Learners return after the first school holiday.
+                    </p>
+
+                </article>
+
+
+                <article class="support-card">
+
+                    <div class="feature-icon navy">
+                        3
+                    </div>
+
+                    <h3>
+                        Term 3
+                    </h3>
+
+                    <strong>
+                        20 July – 22 September
+                    </strong>
+
+                    <p>
+                        The third term of the school year.
+                    </p>
+
+                </article>
+
+
+                <article class="support-card">
+
+                    <div class="feature-icon red">
+                        4
+                    </div>
+
+                    <h3>
+                        Term 4
+                    </h3>
+
+                    <strong>
+                        5 October – 8 December
+                    </strong>
+
+                    <p>
+                        The final term of the 2027 school year.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFICIAL CALENDAR INFORMATION -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        Calendar information
+                    </div>
+
+                    <h2>
+                        Official school calendar.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Term dates and public holidays shown on this page
+                    are based on the published South African public-school
+                    calendar. Individual Lungisani events will be added
+                    when confirmed by the school.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <img
+                src="../assets/images/school-logo.png"
+                alt="Lungisani Primary School logo"
+            >
+
+            <div>
+                <strong>LUNGISANI</strong>
+                <span>PRIMARY SCHOOL</span>
+            </div>
+
+            <p>
+                We shall conquer. A welcoming primary school community
+                focused on quality education, learner growth and partnership.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Explore</h4>
+
+            <a href="../about/index.html">About</a>
+            <a href="../academics/index.html">Academics</a>
+            <a href="../school-life/index.html">School Life</a>
+            <a href="../events/index.html">Events</a>
+            <a href="../gallery/index.html">Gallery</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Connect</h4>
+
+            <a href="../admissions/index.html">Admissions</a>
+            <a href="../contact/index.html">Contact</a>
+            <a href="../mzali-app/index.html">Mzali App</a>
+            <a href="../leadership/index.html">Leadership</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>School</h4>
+
+            <p>
+                1872 Phenduka Street,<br>
+                Dikole Ext 1,<br>
+                Katlehong, 1431
+            </p>
+
+            <p>
+                010 335 0771
+            </p>
+
+            <p>
+                <a href="mailto:ES-LungisaniP/S@gdeschools.gov.za">
+                    ES-LungisaniP/S@gdeschools.gov.za
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 Lungisani Primary School. All rights reserved.
+        </span>
+
+        <span class="footer-credit">
+
+            Website designed &amp; developed by
+
+            <a
+                href="https://mamello-portfolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Mamello Musekene
+            </a>
+
+        </span>
+
+    </div>
+
+</footer>
+
+
+<button
+    class="back-top"
+    type="button"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/events.js"></script>
+
+</body>
+</html>

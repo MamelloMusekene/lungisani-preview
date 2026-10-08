@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Mzali">
+  <rect width="512" height="512" rx="80" fill="#ffffff"/>
+  <g fill="#0b9b52">
+    <circle cx="190" cy="120" r="62"/>
+    <circle cx="337" cy="154" r="49"/>
+    <path d="M70 310c0-79 55-127 120-127 43 0 80 19 105 52-31 15-55 44-61 79l-12 67H111c-23 0-41-18-41-41z"/>
+    <path d="M245 315c0-63 44-109 98-109 53 0 99 42 99 105v62c0 22-18 40-40 40h-83l-17-60c-6-22-25-39-57-38z"/>
+  </g>
+  <path d="M115 262l141 93 141-93v139l-141 93-141-93z" fill="#fff" stroke="#0b9b52" stroke-width="20" stroke-linejoin="round"/>
+  <path d="M256 355v139" stroke="#0b9b52" stroke-width="20"/>
+</svg>
